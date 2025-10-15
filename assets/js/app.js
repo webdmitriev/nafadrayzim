@@ -4,8 +4,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (document.getElementById('current-date')) { document.getElementById('current-date').innerHTML = '© ' + new Date().getFullYear() + ' '; }
 
+  $('.header').on("click", ".header-burger", function () {
+    $(".header").toggleClass("active")
+  })
+
   // Лёгкий ход для якорей
-  $("a.ancLinks").on('click', function () {
+  $("body").on('click', ".ancLinks, a.ancLinks", function () {
     let elementClick = $(this).attr("href");
     let destination = Math.round($(elementClick).offset().top);
     $("html,body").animate({ scrollTop: destination - 100 }, 1100);
@@ -14,16 +18,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-})
-
-document.addEventListener('DOMContentLoaded', function () {
-  $('.header-burger').on("click", function () {
-    $('.header-container').slideToggle()
-    $(".overlay").addClass("active")
-  })
-
-  $('.ancLinks, .header-close').on('click', function () {
-    $('.header-container').hide()
-    $(".overlay").removeClass("active")
-  })
 })

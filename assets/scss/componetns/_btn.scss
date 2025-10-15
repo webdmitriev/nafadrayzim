@@ -1,0 +1,37 @@
+@use "../data" as *;
+
+.btn {
+  display: block;
+  width: 100%;
+  max-width: max-content;
+  padding: 2px 26px;
+  font-family: $ff;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 32px;
+  border-radius: 12px;
+  &.btn-gray {
+    min-width: 112px;
+    color: $grayDark;
+    background-color: $gray;
+  }
+  &.btn-black {
+    color: $white;
+    background-color: $black;
+  }
+}
+
+@media (max-width: 1440px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 576px) {
+}
+@media (max-width: 460px) {
+}
+@media (max-width: 400px) {
+}
