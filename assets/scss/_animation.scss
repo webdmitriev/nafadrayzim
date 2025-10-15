@@ -1,0 +1,46 @@
+@use "data" as *;
+
+$speed_faster: 0.3s;
+$speed_normal: 0.8s;
+$speed_slow: 1.2s;
+
+.with-animation {
+  &.main {
+    .blur-terracotta {
+      transform: scale(0.01);
+      transition: all $speed_normal ease;
+      &.with-animation-active {
+        transform: scale(1);
+      }
+    }
+    .blur-blue {
+      transform: scale(0.01);
+      transition: all $speed_normal ease;
+      &.with-animation-active {
+        transform: scale(1);
+      }
+    }
+    .blur-green {
+      transform: scale(0.01);
+      transition: all $speed_normal ease;
+      &.with-animation-active {
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 576px) {
+}
+@media (max-width: 460px) {
+}
+@media (max-width: 400px) {
+}

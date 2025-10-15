@@ -1,6 +1,15 @@
 @use "../data" as *;
 
 .h1 {
+  position: relative;
+  display: block;
+  width: 100%;
+  font-family: $ff;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 1.2;
+  text-align: center;
+  color: $black;
 }
 
 @media (max-width: 1440px) {

@@ -216,6 +216,30 @@ body {
   }
 }
 
+.black {
+  color: #202020;
+}
+
+.blue {
+  color: #2478ff;
+}
+
+.green {
+  color: #2eb99c;
+}
+
+.terracotta {
+  color: #ff7043;
+}
+
+.grayDark {
+  color: #5c5c5c;
+}
+
+.gray {
+  color: #eaeaea;
+}
+
 .scroll-line-none::-webkit-scrollbar {
   width: 0px;
   height: 0px;
@@ -247,10 +271,33 @@ body {
   background-color: #666;
 }
 
+.with-animation.main .blur-terracotta {
+  transform: scale(0.01);
+  transition: all 0.8s ease;
+}
+.with-animation.main .blur-terracotta.with-animation-active {
+  transform: scale(1);
+}
+.with-animation.main .blur-blue {
+  transform: scale(0.01);
+  transition: all 0.8s ease;
+}
+.with-animation.main .blur-blue.with-animation-active {
+  transform: scale(1);
+}
+.with-animation.main .blur-green {
+  transform: scale(0.01);
+  transition: all 0.8s ease;
+}
+.with-animation.main .blur-green.with-animation-active {
+  transform: scale(1);
+}
+
 .header {
   position: absolute;
   display: block;
   width: 100%;
+  z-index: 90;
 }
 .header .line-wrap {
   position: relative;
@@ -445,6 +492,18 @@ body {
     padding-inline: 0;
   }
 }
+.h1 {
+  position: relative;
+  display: block;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 1.2;
+  text-align: center;
+  color: #202020;
+}
+
 .btn {
   display: block;
   width: 100%;
@@ -455,6 +514,7 @@ body {
   font-size: 14px;
   line-height: 32px;
   border-radius: 12px;
+  cursor: pointer;
 }
 .btn.btn-gray {
   min-width: 112px;
@@ -464,4 +524,81 @@ body {
 .btn.btn-black {
   color: #ffffff;
   background-color: #202020;
+}
+.btn.btn-terracotta {
+  color: #ffffff;
+  background-color: #ff7043;
+}
+
+.main {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-block: 110px 114px;
+}
+.main .h1 {
+  margin-bottom: 24px;
+}
+.main .sub-title {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-bottom: 30px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  color: #202020;
+  z-index: 12;
+}
+.main .btn {
+  position: relative;
+  margin: 0 auto;
+  padding: 19px 40px;
+  font-size: 22px;
+  border-radius: 18px;
+  z-index: 12;
+}
+.main .main-image {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 1136px;
+  height: 400px;
+  margin-top: -34px;
+  z-index: 5;
+}
+.main .main-image .image-01 {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 8;
+}
+.main .main-image .blur-terracotta,
+.main .main-image .blur-blue,
+.main .main-image .blur-green {
+  position: absolute;
+  display: block;
+  object-fit: contain;
+  z-index: 2;
+}
+.main .main-image .blur-terracotta {
+  top: -180px;
+  left: -140px;
+  width: 474px;
+  height: 474px;
+}
+.main .main-image .blur-blue {
+  bottom: -60px;
+  left: -170px;
+  width: 374px;
+  height: 374px;
+}
+.main .main-image .blur-green {
+  bottom: -80px;
+  right: -160px;
+  width: 424px;
+  height: 474px;
 }/*# sourceMappingURL=app.css.map */

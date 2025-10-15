@@ -10,6 +10,7 @@
   font-size: 14px;
   line-height: 32px;
   border-radius: 12px;
+  cursor: pointer;
   &.btn-gray {
     min-width: 112px;
     color: $grayDark;
@@ -18,6 +19,10 @@
   &.btn-black {
     color: $white;
     background-color: $black;
+  }
+  &.btn-terracotta {
+    color: $white;
+    background-color: $terracotta;
   }
 }
 

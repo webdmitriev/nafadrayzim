@@ -1,8 +1,12 @@
 @use "reset";
 @use "data";
+@use "animation";
 
 @use "header";
 
 // components
 @use "./componetns/h1";
 @use "./componetns/btn";
+
+// blocks
+@use "./blocks/main";
