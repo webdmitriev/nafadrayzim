@@ -1,0 +1,26 @@
+@use "../data" as *;
+
+.h2 {
+  display: block;
+  width: 100%;
+  font-family: $ff;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 1.16;
+  color: $black;
+}
+
+@media (max-width: 1440px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 576px) {
+}
+@media (max-width: 460px) {
+}
+@media (max-width: 400px) {
+}

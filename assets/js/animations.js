@@ -28,6 +28,7 @@ jQuery(document).ready(function ($) {
   // *******************
   // changeColorAnimated
   changeColorAnimated("Это слово нужно", ".descr", "#ff7043");
+  changeColorAnimated("добро", ".turns .h2", "#2eb99c");
 
   function changeColorAnimated(text, className, color) {
     const elements = document.querySelectorAll(className);
