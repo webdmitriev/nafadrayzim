@@ -1,0 +1,5 @@
+# Исключить конкретный файл mail.php
+mail.php
+
+# Исключить всю папку phpmailer
+phpmailer/
