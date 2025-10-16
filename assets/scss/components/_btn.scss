@@ -28,6 +28,10 @@
     color: $white;
     background-color: $blue;
   }
+  &.btn-green {
+    color: $white;
+    background-color: $green;
+  }
 }
 
 @media (max-width: 1440px) {

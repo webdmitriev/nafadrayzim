@@ -93,5 +93,7 @@ jQuery(document).ready(function ($) {
 
 
 
-
+  // Expose functions to global scope if needed
+  window.changeColorAnimated = changeColorAnimated;
+  window.escapeRegExp = escapeRegExp;
 });

@@ -8,6 +8,8 @@ $green: #2eb99c;
 $terracotta: #ff7043;
 $grayDark: #5c5c5c;
 $gray: #eaeaea;
+$red: #f05742;
+$input: #ababab;
 
 $md: 767;
 $container: 1240px;
@@ -87,6 +89,14 @@ body {
 }
 .scroll-line-none::-webkit-resizer {
   background-color: #666;
+}
+
+header,
+footer,
+main,
+section {
+  // filter: blur(10px);
+  transition: all 0.4s ease;
 }
 
 @media (max-width: 1440px) {

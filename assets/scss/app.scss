@@ -6,9 +6,11 @@
 @use "footer";
 
 // components
-@use "./componetns/h1";
-@use "./componetns/h2";
-@use "./componetns/btn";
+@use "./components/h1";
+@use "./components/h2";
+@use "./components/btn";
+@use "./components/popup";
+@use "./components/form";
 
 // blocks
 @use "./blocks/main";

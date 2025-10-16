@@ -30,7 +30,7 @@
 
 						<div class="header-buttons">
 							<button class="btn btn-gray">Войти</button>
-							<button class="btn btn-black">Регистрация</button>
+							<button class="btn btn-black show-popup-register">Регистрация</button>
 							<button class="header-burger"><span></span></button>
 						</div>
 
@@ -44,7 +44,7 @@
 
 							<div class="header-mobile-buttons">
 								<button class="btn btn-gray">Войти</button>
-								<button class="btn btn-black">Регистрация</button>
+								<button class="btn btn-black show-popup-register">Регистрация</button>
 							</div>
 						</div>
 					</div>
@@ -180,6 +180,88 @@
 					</div>
 				</div>
 			</footer>
+
+			<div class="popup popup-register scroll-line-none" style="display: none;">
+				<div class="popup-content">
+					<div class="popup-content__top">
+						<h3 class="popup-title">Регистрация на&nbsp;платформе Нафандрайзим</h3>
+						<button class="popup-close"></button>
+					</div>
+					<div class="form">
+						<div class="form-group form-full">
+							<span class="form-label">Фамилия</span>
+							<input type="text" placeholder="Ваша фамилия" class="form-input" />
+							<span class="form-error">Укажите вашу фамилию</span>
+						</div>
+						<div class="form-group form-half">
+							<span class="form-label">Имя</span>
+							<input type="text" placeholder="Ваше имя" class="form-input" />
+							<span class="form-error">Укажите ваше имя</span>
+						</div>
+						<div class="form-group form-half">
+							<span class="form-label">Отчество</span>
+							<input type="text" placeholder="Ваше отчество" class="form-input" />
+							<span class="form-error">Укажите ваше отчество</span>
+						</div>
+						<div class="form-group form-half">
+							<span class="form-label">Телефон</span>
+							<input type="text" placeholder="+79998887766" class="form-input" />
+							<span class="form-error">Укажите ваш телефон</span>
+						</div>
+						<div class="form-group form-half">
+							<span class="form-label">Электронная почта</span>
+							<input type="email" placeholder="Ваша почта" class="form-input" />
+							<span class="form-error">Укажите ваш e-mail</span>
+						</div>
+						<div class="form-group form-half">
+							<span class="form-label">Сайт</span>
+							<input type="text" placeholder="Ваш сайт" class="form-input" />
+							<span class="form-error">Укажите ваш сайт</span>
+						</div>
+						<div class="form-group form-half">
+							<span class="form-label">Посещаемость сайта средняя за месяц</span>
+							<input type="text" placeholder="Введите число" class="form-input" />
+							<span class="form-error">Укажите посещаемость сайта</span>
+						</div>
+						<div class="form-group form-radio">
+							<span class="form-label">Организационно-правовая форма</span>
+							<div class="form-group__radio">
+								<label>
+									<input type="radio" class="form-radio form-radio-option" name="org-form" />
+									<span>Самозанятый</span>
+								</label>
+								<label>
+									<input type="radio" class="form-radio form-radio-option" name="org-form" />
+									<span>ИП</span>
+								</label>
+								<label>
+									<input type="radio" class="form-radio form-radio-option" name="org-form" />
+									<span>Юридическое&nbsp;лицо</span>
+								</label>
+							</div>
+							<span class="form-error">Выберите форму</span>
+						</div>
+
+						<div class="form-group form-submit">
+							<button class="btn btn-green">Зарегистрироваться</button>
+						</div>
+
+						<div class="form-group form-group-access form-radio">
+							<div class="form-group__radio">
+								<label>
+									<input type="radio" class="form-radio form-radio-option" name="access-person" />
+									<span>Даю согласие на обработку персональных данных в соответствии с <a href="#" target="_blank" rel="noopener noreferrer">политикой по обработке персональных данных</a></span>
+								</label>
+								<label>
+									<input type="radio" class="form-radio form-radio-option" name="access-subscribe" />
+									<span>Даю согласие на получение рекламной рассылки</span>
+								</label>
+							</div>
+							<span class="form-error">Поставьте согласия, чтобы продолжить</span>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<script src="./assets/js/jquery-3.6.1.min.js"></script>
