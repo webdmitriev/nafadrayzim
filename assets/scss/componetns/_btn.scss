@@ -24,6 +24,10 @@
     color: $white;
     background-color: $terracotta;
   }
+  &.btn-blue {
+    color: $white;
+    background-color: $blue;
+  }
 }
 
 @media (max-width: 1440px) {
