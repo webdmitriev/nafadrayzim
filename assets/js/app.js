@@ -32,7 +32,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // ******
   // popup-register
-
   $(".popup-register input[type='text'], .popup-register input[type='email'], .popup-register input[type='radio']").on("input", function () {
     if ($(this).val().trim() != "") {
       $(this).parents(".form-group").removeClass("error");

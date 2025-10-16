@@ -791,6 +791,14 @@ section {
     font-size: 16px;
   }
 }
+@media (max-width: 380px) {
+  .footer .line-wrap .footer-block-subscribe .subscribe-bottom {
+    gap: 20px;
+  }
+  .footer .line-wrap .footer-block-subscribe .subscribe-bottom .subscribe-block {
+    max-width: 100%;
+  }
+}
 .h1 {
   position: relative;
   display: block;
@@ -833,6 +841,11 @@ section {
     font-size: 25px;
   }
 }
+@media (max-width: 380px) {
+  .h1 {
+    font-size: 20px;
+  }
+}
 .h2 {
   display: block;
   width: 100%;
@@ -861,6 +874,11 @@ section {
 @media (max-width: 400px) {
   .h2 {
     font-size: 26px;
+  }
+}
+@media (max-width: 380px) {
+  .h2 {
+    font-size: 24px;
   }
 }
 .btn {
@@ -1402,6 +1420,19 @@ section {
     padding-top: 84px;
   }
 }
+@media (max-width: 380px) {
+  .main .sub-title {
+    font-size: 13px;
+  }
+  .main .btn {
+    padding-block: 14px;
+    font-size: 18px;
+  }
+  .main .main-image {
+    width: 460px;
+    height: 330px;
+  }
+}
 .turns {
   position: relative;
   display: block;
@@ -1793,5 +1824,22 @@ section {
   }
   .turns .turns-items .turns-item.turns-item-05 .turns-item-image {
     max-width: 210px;
+  }
+}
+@media (max-width: 380px) {
+  .turns {
+    padding-bottom: 60px;
+  }
+  .turns .turns-items .turns-item .turns-link {
+    gap: 6px;
+    max-width: calc(100% - 16px);
+    font-size: 15px;
+  }
+  .turns .turns-items .turns-item .turns-link span {
+    max-width: calc(100% - 50px);
+  }
+  .turns .turns-items .turns-item .turns-link .turns-link-icon {
+    width: 42px;
+    height: 42px;
   }
 }/*# sourceMappingURL=app.css.map */

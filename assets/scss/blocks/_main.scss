@@ -253,3 +253,16 @@
     padding-top: 84px;
   }
 }
+@media (max-width: 380px) {
+  .main .sub-title {
+    font-size: 13px;
+  }
+  .main .btn {
+    padding-block: 14px;
+    font-size: 18px;
+  }
+  .main .main-image {
+    width: 460px;
+    height: 330px;
+  }
+}
