@@ -1105,6 +1105,15 @@ section {
 .form .form-group.form-half {
   max-width: calc(50% - 12px);
 }
+.form .form-group.error .form-input {
+  border-color: #f05742;
+}
+.form .form-group.error .form-error {
+  font-size: 12px;
+}
+.form .form-group.error input[type=radio] {
+  border-color: #f05742;
+}
 .form .form-group:last-child {
   margin-bottom: 0;
 }

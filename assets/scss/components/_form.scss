@@ -138,6 +138,17 @@
     &.form-half {
       max-width: calc(50% - 12px);
     }
+    &.error {
+      .form-input {
+        border-color: $red;
+      }
+      .form-error {
+        font-size: 12px;
+      }
+      input[type="radio"] {
+        border-color: $red;
+      }
+    }
     &:last-child {
       margin-bottom: 0;
     }
