@@ -27,8 +27,13 @@ jQuery(document).ready(function ($) {
 
   // *******************
   // changeColorAnimated
-  changeColorAnimated("Это слово нужно", ".descr", "#ff7043");
-  changeColorAnimated("добро", ".turns .h2", "#2eb99c");
+  if (document.querySelector('.turns')) {
+    changeColorAnimated("добро", ".turns .h2", "#2eb99c");
+  }
+
+  if (document.querySelector('.significant')) {
+    changeColorAnimated("Социально значимо", ".significant .h2", "#FF7043");
+  }
 
   function changeColorAnimated(text, className, color) {
     const elements = document.querySelectorAll(className);

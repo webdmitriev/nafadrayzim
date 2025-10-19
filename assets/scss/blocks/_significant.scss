@@ -1,0 +1,245 @@
+@use "../data" as *;
+
+.significant {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-block: 60px;
+  z-index: 10;
+  .h2 {
+    position: relative;
+    margin-bottom: 36px;
+    text-align: center;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      display: block;
+      width: 100%;
+      max-width: 608px;
+      height: 26px;
+      background: url("../img/significant/vector-01.svg") center / contain no-repeat;
+      transform: translateX(-50%);
+    }
+    span {
+      position: relative;
+      z-index: 10;
+    }
+  }
+  .sub_title {
+    display: block;
+    width: 100%;
+    margin-bottom: 48px;
+    font-family: $ff;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: center;
+    color: $black;
+  }
+  .significant-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 40px;
+    width: 100%;
+    .significant-item {
+      position: relative;
+      display: block;
+      width: 100%;
+      max-width: calc(50% - 20px);
+      padding: 32px;
+      background-color: $white;
+      box-shadow: 0 4px 54px 0 rgba(52, 59, 68, 0.19);
+      border-radius: 40px;
+      .item__image {
+        display: block;
+        width: 100%;
+        img {
+          display: block;
+          width: 100%;
+          height: inherit;
+          object-fit: contain;
+        }
+      }
+      .item__content {
+        display: block;
+        width: 100%;
+        .item__content-title {
+          display: block;
+          width: 100%;
+          font-family: $ff;
+          font-weight: 600;
+          font-size: 34px;
+          line-height: 1.14;
+          letter-spacing: -0.04em;
+          color: $black;
+        }
+        .item__content-text {
+          position: relative;
+          display: block;
+          width: 100%;
+          padding-left: 48px;
+          font-family: $ff;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 1.4;
+          color: $black;
+          &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            display: block;
+            width: 32px;
+            height: 32px;
+            background: url("../img/significant/icon-ok.svg") center / contain no-repeat;
+            transform: translateY(-50%);
+          }
+        }
+        .item__content-excerpt {
+          display: block;
+          width: 100%;
+          font-family: $ff;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 1.4;
+          color: $grayDark;
+        }
+        *:not(:last-child) {
+          margin-bottom: 24px;
+        }
+      }
+      &:nth-child(1) {
+        padding-top: 420px;
+        .item__image {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+      &:nth-child(2) {
+        padding-bottom: 320px;
+        .item__image {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          max-width: calc(100% - 48px);
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .significant {
+    padding-top: 30px;
+  }
+  .significant .significant-items {
+    max-width: 588px;
+    margin: 0 auto;
+  }
+  .significant .significant-items .significant-item {
+    max-width: 100%;
+  }
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+  .significant .sub_title {
+    margin-bottom: 24px;
+  }
+  .significant .sub_title br {
+    display: none;
+  }
+  .significant .significant-items {
+    gap: 16px;
+    max-width: 480px;
+  }
+  .significant .significant-items .significant-item {
+    padding: 24px 16px;
+    border-radius: 24px;
+  }
+  .significant .significant-items .significant-item:nth-child(1) {
+    padding-top: 330px;
+  }
+  .significant .significant-items .significant-item:nth-child(2) {
+    padding-bottom: 260px;
+  }
+  .significant .significant-items .significant-item .item__content *:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  .significant .significant-items .significant-item .item__content .item__content-title {
+    font-size: 28px;
+  }
+}
+@media (max-width: 576px) {
+  .significant .significant-items .significant-item:nth-child(1) {
+    padding-block: 24px 300px;
+  }
+  .significant .significant-items .significant-item:nth-child(1) .item__image {
+    top: auto;
+    bottom: 0;
+    max-width: calc(100% - 33px);
+  }
+  .significant .significant-items .significant-item:nth-child(2) {
+    padding-bottom: 294px;
+  }
+  .significant .significant-items .significant-item:nth-child(2) .item__image {
+    max-width: calc(100% - 20px);
+  }
+}
+@media (max-width: 460px) {
+  .significant .sub_title {
+    font-size: 18px;
+  }
+  .significant .significant-items {
+    max-width: 380px;
+  }
+  .significant .significant-items .significant-item:nth-child(1) {
+    padding-block: 24px 258px;
+  }
+  .significant .significant-items .significant-item:nth-child(2) {
+    padding-bottom: 256px;
+  }
+  .significant .significant-items .significant-item .item__content .item__content-title {
+    font-size: 24px;
+  }
+  .significant .significant-items .significant-item .item__content .item__content-text {
+    font-size: 16px;
+  }
+  .significant .significant-items .significant-item .item__content .item__content-excerpt {
+    font-size: 13px;
+  }
+}
+@media (max-width: 400px) {
+  .significant .significant-items {
+    max-width: 340px;
+  }
+  .significant .significant-items .significant-item:nth-child(1) {
+    padding-block: 24px 228px;
+  }
+  .significant .significant-items .significant-item:nth-child(2) {
+    padding-bottom: 230px;
+  }
+  .significant .significant-items .significant-item .item__content .item__content-title {
+    font-size: 20px;
+  }
+}
+@media (max-width: 360px) {
+  .significant .sub_title {
+    font-size: 17px;
+  }
+  .significant .significant-items {
+    max-width: 320px;
+  }
+  .significant .significant-items .significant-item:nth-child(1) {
+    padding-block: 24px 196px;
+  }
+  .significant .significant-items .significant-item:nth-child(2) {
+    padding-bottom: 200px;
+  }
+}
