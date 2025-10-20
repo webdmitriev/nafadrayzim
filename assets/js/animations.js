@@ -47,6 +47,10 @@ jQuery(document).ready(function ($) {
     changeColorAnimated("источники добра", ".goodness .h2", "#31C0A2");
   }
 
+  if (document.querySelector('.faq')) {
+    changeColorAnimated("партнёрства", ".faq .content-title-one", "#2478FF");
+  }
+
   function changeColorAnimated(text, className, color) {
     const elements = document.querySelectorAll(className);
     if (!elements.length) return;
