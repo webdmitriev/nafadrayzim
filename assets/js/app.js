@@ -172,5 +172,23 @@ document.addEventListener('DOMContentLoaded', function () {
     return false;
   });
 
+  // **********
+  // quickstart
+  $(".quickstart .quickstart-controls").on("click", ".control-btn-one", function () {
+    $(this).addClass("active")
+    $(this).parents(".quickstart-controls").find(".control-btn-two").removeClass("active")
+
+    $(".quickstart .control-content-one").show()
+    $(".quickstart .control-content-two").hide()
+  })
+
+  $(".quickstart .quickstart-controls").on("click", ".control-btn-two", function () {
+    $(this).addClass("active")
+    $(this).parents(".quickstart-controls").find(".control-btn-one").removeClass("active")
+
+    $(".quickstart .control-content-one").hide()
+    $(".quickstart .control-content-two").show()
+  })
+
 
 })

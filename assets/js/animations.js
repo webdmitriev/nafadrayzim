@@ -35,6 +35,14 @@ jQuery(document).ready(function ($) {
     changeColorAnimated("Социально значимо", ".significant .h2", "#FF7043");
   }
 
+  if (document.querySelector('.charitable')) {
+    changeColorAnimated("помогаем", ".charitable .h2", "#31C0A2");
+  }
+
+  if (document.querySelector('.quickstart')) {
+    changeColorAnimated("быстрого", ".quickstart .h2", "#FF7043");
+  }
+
   function changeColorAnimated(text, className, color) {
     const elements = document.querySelectorAll(className);
     if (!elements.length) return;
