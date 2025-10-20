@@ -43,6 +43,10 @@ jQuery(document).ready(function ($) {
     changeColorAnimated("быстрого", ".quickstart .h2", "#FF7043");
   }
 
+  if (document.querySelector('.goodness')) {
+    changeColorAnimated("источники добра", ".goodness .h2", "#31C0A2");
+  }
+
   function changeColorAnimated(text, className, color) {
     const elements = document.querySelectorAll(className);
     if (!elements.length) return;

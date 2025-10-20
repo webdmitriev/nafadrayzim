@@ -333,6 +333,10 @@
     padding: 14px 18px;
     font-size: 16px;
   }
+  .quickstart .quickstart-content {
+    margin-left: -10px;
+    border-radius: 0 24px 24px 0;
+  }
 }
 @media (max-width: 400px) {
   .quickstart .h2 {
@@ -402,9 +406,7 @@
     font-size: 13px;
   }
   .quickstart .quickstart-content {
-    max-width: 300px;
     padding: 16px 16px 300px 16px;
-    border-radius: 24px;
   }
   .quickstart .quickstart-content .content-btn {
     padding-block: 18px;
