@@ -1415,8 +1415,8 @@ section {
   position: relative;
   display: block;
   width: 100%;
-  margin-top: -60px;
-  padding-bottom: 90px;
+  margin-top: -90px;
+  padding-bottom: 60px;
 }
 .turns .h2 {
   margin-bottom: 40px;
@@ -1614,6 +1614,9 @@ section {
 }
 
 @media (max-width: 1199px) {
+  .turns .h2 {
+    text-align: center;
+  }
   .turns .turns-items {
     max-width: 780px;
     margin: 0 auto;
@@ -1644,6 +1647,9 @@ section {
   }
 }
 @media (max-width: 768px) {
+  .turns {
+    margin-top: -50px;
+  }
   .turns .h2 {
     margin-bottom: 32px;
   }
@@ -1701,6 +1707,7 @@ section {
 }
 @media (max-width: 576px) {
   .turns {
+    margin-top: -70px;
     padding-bottom: 60px;
   }
   .turns .turns-items {
@@ -1828,7 +1835,7 @@ section {
   position: relative;
   display: block;
   width: 100%;
-  padding-block: 60px;
+  padding-block: 60px 30px;
   z-index: 10;
 }
 .significant .h2 {
@@ -1971,6 +1978,10 @@ section {
   }
 }
 @media (max-width: 767px) {
+  .significant .h2:after {
+    max-width: 440px;
+    height: 25px;
+  }
   .significant .sub_title {
     margin-bottom: 24px;
   }
@@ -2069,7 +2080,7 @@ section {
   position: relative;
   display: block;
   width: 100%;
-  margin-bottom: 90px;
+  margin-bottom: 60px;
   padding-block: 60px;
   z-index: 10;
 }
@@ -2328,6 +2339,13 @@ section {
 }
 
 @media (max-width: 1260px) {
+  .charitable .charitable-header .h2 {
+    max-width: calc(100% - 550px);
+  }
+  .charitable .charitable-slider {
+    width: 100%;
+    margin-left: 10px;
+  }
   .charitable .charitable-slider::scroll-button(right) {
     right: calc((100% - 1240px + 60px) / 2);
   }
@@ -2437,6 +2455,9 @@ section {
   }
 }
 @media (max-width: 460px) {
+  .charitable .charitable-header .h2 {
+    max-width: 362px;
+  }
   .charitable .charitable-header {
     margin-bottom: 20px;
   }
@@ -2783,6 +2804,7 @@ section {
 }
 @media (max-width: 400px) {
   .quickstart .h2 {
+    margin-bottom: 24px;
     font-size: 25px;
   }
   .quickstart .quickstart-controls .control-btn {
@@ -2989,7 +3011,6 @@ section {
 }
 .goodness .goodness-content .image-02-blue-mob,
 .goodness .goodness-content .image-03-blue-mob,
-.goodness .goodness-content .image-02-white-mob,
 .goodness .goodness-content .image-01-orange-mob {
   display: none;
 }
@@ -3005,6 +3026,16 @@ section {
   width: 511px;
   height: 211px;
 }
+.goodness .goodness-content .image-02-white-mob {
+  position: absolute;
+  bottom: 20px;
+  left: 60px;
+  display: block;
+  width: 130px;
+  height: 132px;
+  object-fit: contain;
+  transform: scaleX(-1);
+}
 
 @media (max-width: 1260px) {
   .goodness .goodness-content .image-01-white {
@@ -3012,6 +3043,9 @@ section {
   }
 }
 @media (max-width: 1199px) {
+  .goodness .h2 {
+    text-align: center;
+  }
   .goodness .goodness-blocks {
     max-width: 568px;
     margin: 0 auto;
@@ -3066,6 +3100,9 @@ section {
     top: 440px;
     right: -20px;
   }
+  .goodness .goodness-content.content-blue .goodness-content__wrap {
+    max-width: 100%;
+  }
 }
 @media (max-width: 576px) {
   .goodness .h2 {
@@ -3105,11 +3142,15 @@ section {
   }
   .goodness .goodness-content .image-02-white-mob {
     left: 10px;
+    transform: scaleX(1);
   }
 }
 @media (max-width: 460px) {
   .goodness .container {
     padding-right: 0;
+  }
+  .goodness .h2 {
+    padding-right: 10px;
   }
   .goodness .goodness-blocks {
     max-width: 100%;
@@ -3163,6 +3204,11 @@ section {
   }
   .goodness .goodness-content .image-03-blue-mob {
     max-width: 92%;
+  }
+}
+@media (max-width: 360px) {
+  .goodness .h2 {
+    font-size: 23px;
   }
 }
 .informed {
@@ -3572,14 +3618,19 @@ section {
   }
   .faq .faq-block .faq-block__content .image-02 {
     top: 20px;
-    right: 0;
+    right: -18px;
     left: auto;
-    width: 170px;
+    width: 160px;
     height: 150px;
     transform: scaleX(-1);
   }
   .faq .faq-block .faq-accardeon {
     border-radius: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .faq {
+    padding-bottom: 40px;
   }
 }
 @media (max-width: 576px) {

@@ -4,7 +4,7 @@
   position: relative;
   display: block;
   width: 100%;
-  padding-block: 60px;
+  padding-block: 60px 30px;
   z-index: 10;
   .h2 {
     position: relative;
@@ -149,6 +149,10 @@
 @media (max-width: 991px) {
 }
 @media (max-width: 767px) {
+  .significant .h2:after {
+    max-width: 440px;
+    height: 25px;
+  }
   .significant .sub_title {
     margin-bottom: 24px;
   }

@@ -135,9 +135,9 @@
   }
   .faq .faq-block .faq-block__content .image-02 {
     top: 20px;
-    right: 0;
+    right: -18px;
     left: auto;
-    width: 170px;
+    width: 160px;
     height: 150px;
     transform: scaleX(-1);
   }
@@ -148,6 +148,9 @@
 @media (max-width: 991px) {
 }
 @media (max-width: 767px) {
+  .faq {
+    padding-bottom: 40px;
+  }
 }
 @media (max-width: 576px) {
   .faq {

@@ -4,7 +4,7 @@
   position: relative;
   display: block;
   width: 100%;
-  margin-bottom: 90px;
+  margin-bottom: 60px;
   padding-block: 60px;
   z-index: 10;
   .charitable-header {
@@ -265,6 +265,13 @@
 }
 
 @media (max-width: 1260px) {
+  .charitable .charitable-header .h2 {
+    max-width: calc(100% - 550px);
+  }
+  .charitable .charitable-slider {
+    width: 100%;
+    margin-left: 10px;
+  }
   .charitable .charitable-slider::scroll-button(right) {
     right: calc((100% - $container + 60px) / 2);
   }
@@ -378,6 +385,9 @@
   }
 }
 @media (max-width: 460px) {
+  .charitable .charitable-header .h2 {
+    max-width: 362px;
+  }
   .charitable .charitable-header {
     margin-bottom: 20px;
   }

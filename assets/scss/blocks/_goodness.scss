@@ -121,7 +121,6 @@
     }
     .image-02-blue-mob,
     .image-03-blue-mob,
-    .image-02-white-mob,
     .image-01-orange-mob {
       display: none;
     }
@@ -137,6 +136,16 @@
       width: 511px;
       height: 211px;
     }
+    .image-02-white-mob {
+      position: absolute;
+      bottom: 20px;
+      left: 60px;
+      display: block;
+      width: 130px;
+      height: 132px;
+      object-fit: contain;
+      transform: scaleX(-1);
+    }
   }
 }
 
@@ -146,6 +155,9 @@
   }
 }
 @media (max-width: 1199px) {
+  .goodness .h2 {
+    text-align: center;
+  }
   .goodness .goodness-blocks {
     max-width: 568px;
     margin: 0 auto;
@@ -200,6 +212,9 @@
     top: 440px;
     right: -20px;
   }
+  .goodness .goodness-content.content-blue .goodness-content__wrap {
+    max-width: 100%;
+  }
 }
 @media (max-width: 991px) {
 }
@@ -243,11 +258,15 @@
   }
   .goodness .goodness-content .image-02-white-mob {
     left: 10px;
+    transform: scaleX(1);
   }
 }
 @media (max-width: 460px) {
   .goodness .container {
     padding-right: 0;
+  }
+  .goodness .h2 {
+    padding-right: 10px;
   }
   .goodness .goodness-blocks {
     max-width: 100%;
@@ -304,4 +323,7 @@
   }
 }
 @media (max-width: 360px) {
+  .goodness .h2 {
+    font-size: 23px;
+  }
 }
