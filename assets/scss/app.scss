@@ -1,6 +1,5 @@
 @use "reset";
 @use "data";
-@use "animation";
 
 @use "header";
 @use "footer";
@@ -21,3 +20,7 @@
 @use "./blocks/goodness";
 @use "./blocks/informed";
 @use "./blocks/faq";
+@use "./blocks/effectively";
+
+// animation
+@use "animation";

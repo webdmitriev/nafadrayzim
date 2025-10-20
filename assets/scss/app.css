@@ -278,28 +278,6 @@ section {
   transition: all 0.4s ease;
 }
 
-.with-animation.main .blur-terracotta {
-  transform: scale(0.01);
-  transition: all 0.8s ease;
-}
-.with-animation.main .blur-terracotta.with-animation-active {
-  transform: scale(1);
-}
-.with-animation.main .blur-blue {
-  transform: scale(0.01);
-  transition: all 0.8s ease;
-}
-.with-animation.main .blur-blue.with-animation-active {
-  transform: scale(1);
-}
-.with-animation.main .blur-green {
-  transform: scale(0.01);
-  transition: all 0.8s ease;
-}
-.with-animation.main .blur-green.with-animation-active {
-  transform: scale(1);
-}
-
 .header {
   position: absolute;
   display: block;
@@ -3605,6 +3583,9 @@ section {
   }
 }
 @media (max-width: 576px) {
+  .faq {
+    padding-bottom: 40px;
+  }
   .faq .container {
     padding-inline: 0;
   }
@@ -3684,4 +3665,277 @@ section {
     padding-top: 16px;
     font-size: 14px;
   }
+}
+.effectively {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-block: 30px 60px;
+  z-index: 10;
+}
+.effectively:before {
+  content: "";
+  position: absolute;
+  right: calc((100% - 1240px) / 2);
+  bottom: 0;
+  display: block;
+  width: 519px;
+  height: 250px;
+  background: url("../img/effectively/bg-01.png") center/contain no-repeat;
+  z-index: 2;
+}
+.effectively .line-wrap {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0 70px;
+  width: 100%;
+  z-index: 8;
+}
+.effectively .h2 {
+  position: relative;
+  max-width: 1060px;
+  margin: 0 auto 24px auto;
+  text-align: center;
+}
+.effectively .h2:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -24px;
+  display: block;
+  width: 313px;
+  height: 24px;
+  background: url("../img/effectively/vector-01.svg") center/contain no-repeat;
+  z-index: 2;
+}
+.effectively .effectively-avatar {
+  display: block;
+  width: 440px;
+}
+.effectively .effectively-avatar .effectively-avatar-image {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: inherit;
+  object-fit: contain;
+}
+.effectively .effectively-avatar .effectively-quote {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-bottom: 46px;
+  padding: 24px;
+  font-family: "Caveat", cursive;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 1.3;
+  color: #322a61;
+  background-color: #ffffff;
+  border-radius: 40px;
+  box-shadow: 0 4px 30px 0 #eceefd;
+}
+.effectively .effectively-avatar .effectively-quote:before, .effectively .effectively-avatar .effectively-quote:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 22px;
+  height: 22px;
+  z-index: 5;
+}
+.effectively .effectively-avatar .effectively-quote:before {
+  top: -12px;
+  right: 36px;
+  background: url("../img/effectively/quote-01.svg") center/contain no-repeat;
+}
+.effectively .effectively-avatar .effectively-quote:after {
+  bottom: -12px;
+  left: 36px;
+  background: url("../img/effectively/quote-02.svg") center/contain no-repeat;
+}
+.effectively .effectively-avatar .avatar-name {
+  display: block;
+  width: 100%;
+  margin-bottom: 2px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #202020;
+}
+.effectively .effectively-avatar .avatar-role {
+  display: block;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #5c5c5c;
+}
+.effectively .effectively-content {
+  display: block;
+  width: 420px;
+  padding-top: 40px;
+}
+.effectively .effectively-content .text {
+  display: block;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  text-indent: 24px;
+  color: #202020;
+}
+.effectively .effectively-content .text:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+@media (max-width: 1199px) {
+  .effectively .h2 {
+    font-size: 46px;
+  }
+}
+@media (max-width: 991px) {
+  .effectively .line-wrap {
+    gap: 0 120px;
+  }
+  .effectively .h2 {
+    max-width: 790px;
+    font-size: 36px;
+  }
+}
+@media (max-width: 767px) {
+  .effectively {
+    padding-bottom: 90px;
+  }
+  .effectively:before {
+    right: calc((100% - 1240px + 340px) / 2);
+    width: 400px;
+    height: 184px;
+  }
+  .effectively .h2 {
+    margin-bottom: 36px;
+  }
+  .effectively .h2:after {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 576px) {
+  .effectively {
+    padding-bottom: 70px;
+  }
+  .effectively:before {
+    right: calc((100% - 1240px + 540px) / 2);
+    width: 320px;
+    height: 150px;
+  }
+  .effectively .h2 {
+    max-width: 790px;
+    font-size: 30px;
+  }
+  .effectively .h2:after {
+    width: 240px;
+    height: 22px;
+  }
+  .effectively .effectively-avatar .effectively-quote {
+    font-size: 20px;
+  }
+  .effectively .effectively-avatar .avatar-name {
+    font-size: 19px;
+  }
+  .effectively .effectively-avatar .avatar-role {
+    font-size: 15px;
+  }
+  .effectively .effectively-content {
+    width: 100%;
+    max-width: 100%;
+  }
+  .effectively .effectively-content .text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 460px) {
+  .effectively:before {
+    right: auto;
+    left: 50%;
+  }
+  .effectively .h2 {
+    font-size: 26px;
+  }
+  .effectively .effectively-avatar .effectively-quote {
+    font-size: 18px;
+    text-align: center;
+  }
+  .effectively .effectively-content {
+    padding-top: 24px;
+  }
+  .effectively .effectively-content .text {
+    font-size: 15px;
+  }
+}
+@media (max-width: 400px) {
+  .effectively {
+    padding-bottom: 90px;
+  }
+  .effectively .h2 {
+    max-width: 790px;
+    font-size: 24px;
+  }
+  .effectively .effectively-avatar .effectively-quote {
+    padding: 12px 16px;
+    font-size: 16px;
+  }
+  .effectively .effectively-avatar .avatar-name {
+    font-size: 16px;
+  }
+  .effectively .effectively-avatar .avatar-role {
+    font-size: 13px;
+  }
+  .effectively .effectively-content .text {
+    font-size: 14px;
+    text-indent: 16px;
+  }
+  .effectively:before {
+    right: calc((100% - 1240px + 640px) / 2);
+    width: 240px;
+    height: 110px;
+  }
+}
+@media (max-width: 360px) {
+  .effectively {
+    padding-bottom: 60px;
+  }
+  .effectively .h2:after {
+    width: 210px;
+    height: 20px;
+  }
+  .effectively .effectively-avatar .effectively-quote {
+    font-size: 15px;
+  }
+}
+.with-animation.main .blur-terracotta {
+  transform: scale(0.01);
+  transition: all 0.8s ease;
+}
+.with-animation.main .blur-terracotta.with-animation-active {
+  transform: scale(1);
+}
+.with-animation.main .blur-blue {
+  transform: scale(0.01);
+  transition: all 0.8s ease;
+}
+.with-animation.main .blur-blue.with-animation-active {
+  transform: scale(1);
+}
+.with-animation.main .blur-green {
+  transform: scale(0.01);
+  transition: all 0.8s ease;
+}
+.with-animation.main .blur-green.with-animation-active {
+  transform: scale(1);
 }/*# sourceMappingURL=app.css.map */
