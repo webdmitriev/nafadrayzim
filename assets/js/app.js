@@ -11,7 +11,8 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 
   $("body").on("click", ".popup-close", function () {
-    $(".popup-register").slideToggle()
+    $(".popup-register").hide()
+    $(".popup-call").hide()
 
     $("header, footer, main, section").css({
       "filter": "blur(0px)"
@@ -30,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 400);
   })
 
-  // ******
+  // **************
   // popup-register
   $(".popup-register input[type='text'], .popup-register input[type='email'], .popup-register input[type='radio']").on("input", function () {
     if ($(this).val().trim() != "") {
@@ -165,10 +166,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // ************
   // Лёгкий ход для якорей
-  $("body").on('click', ".ancLinks, a.ancLinks", function () {
+  $("body").on('click', ".ancLinks a, a.ancLinks", function () {
     let elementClick = $(this).attr("href");
     let destination = Math.round($(elementClick).offset().top);
-    $("html,body").animate({ scrollTop: destination - 100 }, 1100);
+    $(".header").removeClass("active")
+    $("html,body").animate({ scrollTop: destination }, 1100);
     return false;
   });
 
@@ -204,6 +206,111 @@ document.addEventListener('DOMContentLoaded', function () {
       .slideUp();
     e.preventDefault();
   });
+
+
+  // **********
+  // popup-call
+  $(".popup-call input[type='text'], .popup-call input[type='radio']").on("input", function () {
+    if ($(this).val().trim() != "") {
+      $(this).parents(".form-group").removeClass("error");
+    }
+  });
+
+  $("body").on("click", ".popup-call .form-submit .btn", function (e) {
+    e.preventDefault();
+
+    let fond = $(".popup-call input[name='fond']");
+    let phone = $(".popup-call input[name='phone']");
+    let name = $(".popup-call input[name='name']");
+    let accessPerson = $(".popup-call input[name='access-person']");
+    let accessSubscribe = $(".popup-call input[name='access-subscribe']");
+
+    const fields = [fond, phone, name];
+
+    // 📝 базовая проверка
+    let isValid = true;
+    fields.forEach(field => {
+      console.log('ww');
+      if (field.val().trim() === "") {
+        field.parents(".form-group").addClass("error");
+        isValid = false;
+      } else {
+        field.parents(".form-group").removeClass("error");
+      }
+    });
+
+    // дополнительные проверки (фамилия, имя и т.п.)
+    if (name.val().trim().length < 2 || name.val().trim().length > 12) {
+      name.parents(".form-group").addClass("error")
+        .find(".form-error").text("Введите корректное имя!");
+      isValid = false;
+    }
+
+    if (phone.val().trim().length < 12) {
+      phone.parents(".form-group").addClass("error")
+        .find(".form-error").text("Введите корректный номер телефона!");
+      isValid = false;
+    }
+
+    if (!accessPerson.is(":checked")) {
+      accessPerson.parents(".form-group").addClass("error");
+      isValid = false;
+    } else {
+      accessPerson.parents(".form-group").removeClass("error");
+    }
+
+    if (!accessSubscribe.is(":checked")) {
+      accessSubscribe.parents(".form-group").addClass("error");
+      isValid = false;
+    } else {
+      accessSubscribe.parents(".form-group").removeClass("error");
+    }
+
+    if (!isValid) {
+      return; // ❌ если форма невалидна — останавливаем
+    }
+
+    // ✅ Собираем данные для отправки
+    let data = {
+      fond: fond.val().trim(),
+      name: name.val().trim(),
+      phone: phone.val().trim(),
+      "access-person": accessPerson.is(":checked") ? "Да" : "Нет",
+      "access-subscribe": accessSubscribe.is(":checked") ? "Да" : "Нет"
+    };
+
+    // 🚀 Отправляем через AJAX
+    $.ajax({
+      type: "POST",
+      url: "../../recall.php",
+      data: data,
+      success: function (response) {
+        console.log("Ответ сервера:", response);
+
+        // Красиво заменяем содержимое формы
+        $(".popup-call .form").fadeOut(300, function () {
+          $(".popup-call .popup-title").html("Спасибо за заявку!");
+        });
+      },
+      error: function (xhr, status, error) {
+        console.error("Ошибка отправки:", error);
+        alert("Произошла ошибка при отправке. Попробуйте позже.");
+      }
+    });
+
+  });
+
+  $("body").on("click", ".show-popup-call", function () {
+    $(".popup-call").slideToggle()
+
+    $("header, footer, main, section").css({
+      "filter": "blur(10px)"
+    })
+
+    setTimeout(() => {
+      changeColorAnimated("свяжемся", ".popup-call .popup-title", "#31C0A2");
+    }, 400);
+  })
 
 
 })

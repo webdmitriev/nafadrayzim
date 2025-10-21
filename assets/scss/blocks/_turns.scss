@@ -65,6 +65,7 @@
         background-color: $terracotta;
         border-radius: 30px;
         outline: 10px solid $white;
+        cursor: pointer;
         z-index: 6;
         &:before,
         &:after {

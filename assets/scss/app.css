@@ -868,6 +868,7 @@ section {
   font-weight: bold;
   font-size: 14px;
   line-height: 32px;
+  text-align: center;
   border-radius: 12px;
   cursor: pointer;
 }
@@ -1109,6 +1110,16 @@ section {
 }
 .form .form-group.error input[type=radio] {
   border-color: #f05742;
+}
+.form .form-group a.form-notice {
+  display: block;
+  width: 100%;
+  max-width: max-content;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  text-decoration: underline;
+  color: #ababab;
 }
 .form .form-group:last-child {
   margin-bottom: 0;
@@ -1479,6 +1490,7 @@ section {
   background-color: #ff7043;
   border-radius: 30px;
   outline: 10px solid #ffffff;
+  cursor: pointer;
   z-index: 6;
 }
 .turns .turns-items .turns-item .turns-link:before, .turns .turns-items .turns-item .turns-link:after {
@@ -2120,6 +2132,7 @@ section {
   width: 48px;
   height: 48px;
   background: url("../img/charitable/arrow-link-orange.svg") center/contain no-repeat;
+  cursor: pointer;
 }
 .charitable .charitable-header .charitable-header__content .charitable-btn {
   position: absolute;
@@ -2293,6 +2306,7 @@ section {
   font-size: 24px;
   line-height: 1.4;
   color: #ffffff;
+  cursor: pointer;
 }
 .charitable .charitable-slider .charitable-slide .charitable-slide__content .slide__content-link:after {
   content: "";
@@ -2503,6 +2517,7 @@ section {
   background-color: #e9e7e7;
   border-radius: 20px;
   transition: all 0.4s ease;
+  cursor: pointer;
 }
 .quickstart .quickstart-controls .control-btn.active {
   color: #2478ff;
@@ -3562,6 +3577,7 @@ section {
   font-size: 19px;
   line-height: 1.4;
   color: #202020;
+  cursor: pointer;
 }
 .faq .faq-block .faq-accardeon .panel .panel-heading:after {
   content: "";

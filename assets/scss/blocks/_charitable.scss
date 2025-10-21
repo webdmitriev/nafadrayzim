@@ -41,6 +41,7 @@
         width: 48px;
         height: 48px;
         background: url("../img/charitable/arrow-link-orange.svg") center / contain no-repeat;
+        cursor: pointer;
       }
       .charitable-btn {
         position: absolute;
@@ -213,6 +214,7 @@
           font-size: 24px;
           line-height: 1.4;
           color: $white;
+          cursor: pointer;
           &:after {
             content: "";
             position: absolute;

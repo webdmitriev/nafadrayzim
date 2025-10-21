@@ -3,9 +3,9 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Nafadrayzim</title>
+		<title>Нафандрайзим</title>
 
-		<link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+		<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,31 +19,31 @@
 			<header class="header">
 				<div class="container">
 					<div class="line-wrap">
-						<a href="#" class="header-logotype"><img src="./assets/img/header/logotype.svg" alt="alto" /></a>
+						<a href="/" class="header-logotype"><img src="./assets/img/header/logotype.svg" alt="alto" /></a>
 
 						<ul class="header-menu">
-							<li class="menu-item"><a href="#">Как это работает</a></li>
-							<li class="menu-item"><a href="#">Наши фонды</a></li>
-							<li class="menu-item"><a href="#">О платформе</a></li>
-							<li class="menu-item"><a href="#">Частые вопросы</a></li>
+							<li class="menu-item ancLinks"><a href="#turns-scroll">Как это работает</a></li>
+							<li class="menu-item ancLinks"><a href="#charitable-scroll">Наши фонды</a></li>
+							<li class="menu-item ancLinks"><a href="#goodness-scroll">О платформе</a></li>
+							<li class="menu-item ancLinks"><a href="#faq-scroll">Частые вопросы</a></li>
 						</ul>
 
 						<div class="header-buttons">
-							<button class="btn btn-gray">Войти</button>
+							<a href="http://nafandraizim.ru/login.php" class="btn btn-gray" target="_blank" rel="noopener noreferrer">Войти</a>
 							<button class="btn btn-black show-popup-register">Регистрация</button>
 							<button class="header-burger"><span></span></button>
 						</div>
 
 						<div class="header-mobile">
 							<ul class="header-mobile-menu">
-								<li class="menu-item"><a href="#">Как это работает</a></li>
-								<li class="menu-item"><a href="#">Наши фонды</a></li>
-								<li class="menu-item"><a href="#">О платформе</a></li>
-								<li class="menu-item"><a href="#">Частые вопросы</a></li>
+								<li class="menu-item ancLinks"><a href="#turns-scroll">Как это работает</a></li>
+								<li class="menu-item ancLinks"><a href="#charitable-scroll">Наши фонды</a></li>
+								<li class="menu-item ancLinks"><a href="#goodness-scroll">О платформе</a></li>
+								<li class="menu-item ancLinks"><a href="#faq-scroll">Частые вопросы</a></li>
 							</ul>
 
 							<div class="header-mobile-buttons">
-								<button class="btn btn-gray">Войти</button>
+								<a href="http://nafandraizim.ru/login.php" class="btn btn-gray" target="_blank" rel="noopener noreferrer">Войти</a>
 								<button class="btn btn-black show-popup-register">Регистрация</button>
 							</div>
 						</div>
@@ -56,7 +56,7 @@
 					<div class="line-wrap">
 						<h1 class="h1"><span class="blue">Доход</span> для вас, <span class="green">поддержка</span> <br/>для благотворительности&nbsp;&mdash; <br/><span class="terracotta">добро</span> в&nbsp;каждом клике</h1>
 						<p class="sub-title">Размещай виджет социальной рекламы на&nbsp;своем сайте и&nbsp;превращай клики в&nbsp;добро. <br/>Ваш сайт зарабатывает, а&nbsp;благотворительные проекты получают поддержку.</p>
-						<button class="btn btn-terracotta">Присоединиться</button>
+						<button class="btn btn-terracotta show-popup-register">Присоединиться</button>
 						<div class="main-image">
 							<img class="image-01" src="./assets/img/main/image-01.png" alt="alto" />
 							<img class="image-01-mobile" src="./assets/img/main/image-01-mobile.png" alt="alto" />
@@ -68,7 +68,7 @@
 				</div>
 			</main>
 
-			<section class="turns">
+			<section class="turns" id="turns-scroll">
 				<div class="container">
 					<div class="line-wrap">
 						<h2 class="h2">Как ваш сайт превращает <br/>трафик в&nbsp;добро</h2>
@@ -102,17 +102,17 @@
 								<span class="turns-item-label">Фонды и&nbsp;подопечные получают поддержку</span>
 								<span class="turns-item-descr">Посетители вовлекаются и&nbsp;совершают пожертвования, помогая тем, кто в&nbsp;этом нуждается</span>
 								<img class="turns-item-image" src="./assets/img/turns/image-05-pc.png" alt="alto" />
-								<a href="#" class="turns-link">
+								<button class="turns-link show-popup-register">
 									<span>Хочу стать партнером</span>
 									<img class="turns-link-icon" src="./assets/img/icons/icon-btn-arrow.svg" alt="alto" />
-								</a>
+								</button>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section class="significant">
+			<section class="significant" id="significant-scroll">
 				<div class="container">
 					<div class="line-wrap">
 						<h2 class="h2">Эффективно. Выгодно. Безопасно. <br/>Социально значимо</h2>
@@ -156,21 +156,21 @@
 				</div>
 			</section>
 
-			<section class="charitable">
+			<section class="charitable" id="charitable-scroll">
 				<div class="container">
 					<div class="charitable-header">
 						<h2 class="h2">Благотворительные фонды, которым мы&nbsp;уже помогаем</h2>
 						<div class="charitable-header__content">
 							<p class="charitable-descr">Присоединяйтесь к&nbsp;проекту и&nbsp;поддерживайте проверенные благотворительные фонды</p>
-							<a class="charitable-link" href="#"></a>
-							<button class="charitable-btn">Помощь в&nbsp;один клик</button>
+							<button class="charitable-link show-popup-call"></button>
+							<button class="charitable-btn show-popup-call">Помощь в&nbsp;один клик</button>
 						</div>
 					</div>
 				</div>
 				<div class="charitable-slider">
 					<div class="charitable-slide" style="background-image: url('./assets/img/charitable/slide-01.jpg');">
 						<img src="./assets/img/charitable/logo-01.svg" alt="alto" loading="lazy" decoding="async" class="slide-logo" />
-						<span class="slide-clue">Скоро на&nbsp;платформе</span>
+						<!-- <span class="slide-clue">Скоро на&nbsp;платформе</span> -->
 						<span class="slide-tag">Животные</span>
 						<p class="slide-title">«Хатико» Спасаем животных</p>
 						<p class="slide-descr">Мы&nbsp;дарим питомцам шанс на&nbsp;счастье. Шанс обрести дом и&nbsp;любящего хозяина. Мы&nbsp;любим наших хвостатых подопечных и&nbsp;точно знаем, что наши чувства взаимны!</p>
@@ -182,15 +182,15 @@
 							<span class="slide__content-value">153</span>
 							<span class="slide__content-label">Пристроены в&nbsp;новые дома</span>
 							<span class="slide__content-value">132</span>
-							<a href="#" class="slide__content-link">Поддержи добро</a>
+							<p class="slide__content-link show-popup-call">Поддержи добро</p>
 						</div>
 					</div>
-					<div class="charitable-slide" style="background-image: url('./assets/img/charitable/slide-01.jpg');">
-						<img src="./assets/img/charitable/logo-01.svg" alt="alto" loading="lazy" decoding="async" class="slide-logo" />
+					<div class="charitable-slide" style="background-image: url('./assets/img/charitable/slide-02.jpg');">
+						<img src="./assets/img/charitable/logo-02.png" alt="alto" loading="lazy" decoding="async" class="slide-logo" />
 						<span class="slide-clue">Скоро на&nbsp;платформе</span>
-						<span class="slide-tag">Животные</span>
-						<p class="slide-title">«Хатико» Спасаем животных</p>
-						<p class="slide-descr">Мы&nbsp;дарим питомцам шанс на&nbsp;счастье. Шанс обрести дом и&nbsp;любящего хозяина. Мы&nbsp;любим наших хвостатых подопечных и&nbsp;точно знаем, что наши чувства взаимны!</p>
+						<span class="slide-tag">Пенсионеры</span>
+						<p class="slide-title">Фонд поддержки пожилых «Добрый слон»</p>
+						<p class="slide-descr">&laquo;Добрый Слон&raquo; оказывает поддержку одиноким бабушкам и&nbsp;дедушкам с&nbsp;очень низким достатком</p>
 						<div class="charitable-slide__content">
 							<p class="slide__content-descr">С&nbsp;2015 года общество защиты животных &laquo;Хатико&raquo; помогает бездомным животным города Кызыл. Мы&nbsp;их&nbsp;обрабатываем, вакцинируем, стерилизуем, оказываем экстренную ветеринарную помощь. <br/>Также мы&nbsp;размещаем собак в&nbsp;нашем приюте и&nbsp;ищем новых хозяев.</p>
 							<span class="slide__content-label">Стерилизованных бездомных животных</span>
@@ -199,15 +199,15 @@
 							<span class="slide__content-value">153</span>
 							<span class="slide__content-label">Пристроены в&nbsp;новые дома</span>
 							<span class="slide__content-value">132</span>
-							<a href="#" class="slide__content-link">Поддержи добро</a>
+							<p class="slide__content-link show-popup-call">Поддержи добро</p>
 						</div>
 					</div>
-					<div class="charitable-slide" style="background-image: url('./assets/img/charitable/slide-01.jpg');">
-						<img src="./assets/img/charitable/logo-01.svg" alt="alto" loading="lazy" decoding="async" class="slide-logo" />
-						<span class="slide-clue">Скоро на&nbsp;платформе</span>
+					<div class="charitable-slide" style="background-image: url('./assets/img/charitable/slide-03.jpg');">
+						<img src="./assets/img/charitable/logo-03.png" alt="alto" loading="lazy" decoding="async" class="slide-logo" />
+						<!-- <span class="slide-clue">Скоро на&nbsp;платформе</span> -->
 						<span class="slide-tag">Животные</span>
-						<p class="slide-title">«Хатико» Спасаем животных</p>
-						<p class="slide-descr">Мы&nbsp;дарим питомцам шанс на&nbsp;счастье. Шанс обрести дом и&nbsp;любящего хозяина. Мы&nbsp;любим наших хвостатых подопечных и&nbsp;точно знаем, что наши чувства взаимны!</p>
+						<p class="slide-title">Фонд помощи животным &laquo;Возьми счастье в&nbsp;дом&raquo;</p>
+						<p class="slide-descr">Каждая брошенная собака и&nbsp;кошка получает второй шанс. Мы&nbsp;лечим, кормим, согреваем и&nbsp;помогаем им&nbsp;снова поверить людям.</p>
 						<div class="charitable-slide__content">
 							<p class="slide__content-descr">С&nbsp;2015 года общество защиты животных &laquo;Хатико&raquo; помогает бездомным животным города Кызыл. Мы&nbsp;их&nbsp;обрабатываем, вакцинируем, стерилизуем, оказываем экстренную ветеринарную помощь. <br/>Также мы&nbsp;размещаем собак в&nbsp;нашем приюте и&nbsp;ищем новых хозяев.</p>
 							<span class="slide__content-label">Стерилизованных бездомных животных</span>
@@ -216,64 +216,13 @@
 							<span class="slide__content-value">153</span>
 							<span class="slide__content-label">Пристроены в&nbsp;новые дома</span>
 							<span class="slide__content-value">132</span>
-							<a href="#" class="slide__content-link">Поддержи добро</a>
-						</div>
-					</div>
-					<div class="charitable-slide" style="background-image: url('./assets/img/charitable/slide-01.jpg');">
-						<img src="./assets/img/charitable/logo-01.svg" alt="alto" loading="lazy" decoding="async" class="slide-logo" />
-						<span class="slide-clue">Скоро на&nbsp;платформе</span>
-						<span class="slide-tag">Животные</span>
-						<p class="slide-title">«Хатико» Спасаем животных</p>
-						<p class="slide-descr">Мы&nbsp;дарим питомцам шанс на&nbsp;счастье. Шанс обрести дом и&nbsp;любящего хозяина. Мы&nbsp;любим наших хвостатых подопечных и&nbsp;точно знаем, что наши чувства взаимны!</p>
-						<div class="charitable-slide__content">
-							<p class="slide__content-descr">С&nbsp;2015 года общество защиты животных &laquo;Хатико&raquo; помогает бездомным животным города Кызыл. Мы&nbsp;их&nbsp;обрабатываем, вакцинируем, стерилизуем, оказываем экстренную ветеринарную помощь. <br/>Также мы&nbsp;размещаем собак в&nbsp;нашем приюте и&nbsp;ищем новых хозяев.</p>
-							<span class="slide__content-label">Стерилизованных бездомных животных</span>
-							<span class="slide__content-value">2655</span>
-							<span class="slide__content-label">Вылеченных животных</span>
-							<span class="slide__content-value">153</span>
-							<span class="slide__content-label">Пристроены в&nbsp;новые дома</span>
-							<span class="slide__content-value">132</span>
-							<a href="#" class="slide__content-link">Поддержи добро</a>
-						</div>
-					</div>
-					<div class="charitable-slide" style="background-image: url('./assets/img/charitable/slide-01.jpg');">
-						<img src="./assets/img/charitable/logo-01.svg" alt="alto" loading="lazy" decoding="async" class="slide-logo" />
-						<span class="slide-clue">Скоро на&nbsp;платформе</span>
-						<span class="slide-tag">Животные</span>
-						<p class="slide-title">«Хатико» Спасаем животных</p>
-						<p class="slide-descr">Мы&nbsp;дарим питомцам шанс на&nbsp;счастье. Шанс обрести дом и&nbsp;любящего хозяина. Мы&nbsp;любим наших хвостатых подопечных и&nbsp;точно знаем, что наши чувства взаимны!</p>
-						<div class="charitable-slide__content">
-							<p class="slide__content-descr">С&nbsp;2015 года общество защиты животных &laquo;Хатико&raquo; помогает бездомным животным города Кызыл. Мы&nbsp;их&nbsp;обрабатываем, вакцинируем, стерилизуем, оказываем экстренную ветеринарную помощь. <br/>Также мы&nbsp;размещаем собак в&nbsp;нашем приюте и&nbsp;ищем новых хозяев.</p>
-							<span class="slide__content-label">Стерилизованных бездомных животных</span>
-							<span class="slide__content-value">2655</span>
-							<span class="slide__content-label">Вылеченных животных</span>
-							<span class="slide__content-value">153</span>
-							<span class="slide__content-label">Пристроены в&nbsp;новые дома</span>
-							<span class="slide__content-value">132</span>
-							<a href="#" class="slide__content-link">Поддержи добро</a>
-						</div>
-					</div>
-					<div class="charitable-slide" style="background-image: url('./assets/img/charitable/slide-01.jpg');">
-						<img src="./assets/img/charitable/logo-01.svg" alt="alto" loading="lazy" decoding="async" class="slide-logo" />
-						<span class="slide-clue">Скоро на&nbsp;платформе</span>
-						<span class="slide-tag">Животные</span>
-						<p class="slide-title">«Хатико» Спасаем животных</p>
-						<p class="slide-descr">Мы&nbsp;дарим питомцам шанс на&nbsp;счастье. Шанс обрести дом и&nbsp;любящего хозяина. Мы&nbsp;любим наших хвостатых подопечных и&nbsp;точно знаем, что наши чувства взаимны!</p>
-						<div class="charitable-slide__content">
-							<p class="slide__content-descr">С&nbsp;2015 года общество защиты животных &laquo;Хатико&raquo; помогает бездомным животным города Кызыл. Мы&nbsp;их&nbsp;обрабатываем, вакцинируем, стерилизуем, оказываем экстренную ветеринарную помощь. <br/>Также мы&nbsp;размещаем собак в&nbsp;нашем приюте и&nbsp;ищем новых хозяев.</p>
-							<span class="slide__content-label">Стерилизованных бездомных животных</span>
-							<span class="slide__content-value">2655</span>
-							<span class="slide__content-label">Вылеченных животных</span>
-							<span class="slide__content-value">153</span>
-							<span class="slide__content-label">Пристроены в&nbsp;новые дома</span>
-							<span class="slide__content-value">132</span>
-							<a href="#" class="slide__content-link">Поддержи добро</a>
+							<p class="slide__content-link show-popup-call">Поддержи добро</p>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section class="quickstart">
+			<section class="quickstart" id="quickstart-scroll">
 				<div class="container">
 					<div class="line-wrap">
 						<h2 class="h2">Простое подключение <br/>к&nbsp;платформе для быстрого старта</h2>
@@ -284,8 +233,8 @@
 						<div class="quickstart-content control-content-one" style="display: block;">
 							<h3 class="content-title">Выбирайте подопечного, которому хотите помочь</h3>
 							<p class="content-descr">В&nbsp;каталоге представлены проверенные благотворительные фонды. <br/><b>Вы&nbsp;сами решаете, какой проект поддержать.</b></p>
-							<button class="content-btn content-btn-green">Стать партнёром</button>
-							<button class="content-flying-btn">Помогать легко</button>
+							<button class="content-btn content-btn-green show-popup-call">Стать партнёром</button>
+							<button class="content-flying-btn show-popup-call">Помогать легко</button>
 							<img class="image-01-1" src="./assets/img/quickstart/image-01-1.png" alt="alto" loading="lazy" decoding="async" />
 							<img class="image-01-2" src="./assets/img/quickstart/image-01-2.png" alt="alto" loading="lazy" decoding="async" />
 							<img class="image-01-3" src="./assets/img/quickstart/image-01-3.png" alt="alto" loading="lazy" decoding="async" />
@@ -294,8 +243,8 @@
 						<div class="quickstart-content control-content-two" style="display: none;">
 							<h3 class="content-title">Напишите нам, мы&nbsp;поможем привлечь доноров</h3>
 							<p class="content-descr"><b>Берем на&nbsp;себя все хлопоты</b> по&nbsp;привлечению пожертвований на&nbsp;ваши добрые дела</p>
-							<button class="content-btn content-btn-blue">Оставить заявку</button>
-							<button class="content-flying-btn">Меняем мир вместе</button>
+							<button class="content-btn content-btn-blue show-popup-call">Оставить заявку</button>
+							<button class="content-flying-btn show-popup-call">Меняем мир вместе</button>
 							<img class="image-02-1" src="./assets/img/quickstart/image-02-1.png" alt="alto" loading="lazy" decoding="async" />
 							<img class="image-02-2" src="./assets/img/quickstart/image-02-2.png" alt="alto" loading="lazy" decoding="async" />
 							<img class="image-02-3" src="./assets/img/quickstart/image-02-3.png" alt="alto" loading="lazy" decoding="async" />
@@ -304,7 +253,7 @@
 				</div>
 			</section>
 
-			<section class="goodness">
+			<section class="goodness" id="goodness-scroll">
 				<div class="container">
 					<div class="line-wrap">
 						<h2 class="h2">Платформа, которая превращает <br/>сайты в&nbsp;источники добра</h2>
@@ -354,14 +303,14 @@
 								<span>Даю согласие на&nbsp;обработку персональных данных в&nbsp;соответствии с&nbsp;<a href="#" target="_blank" rel="noopener noreferrer">политикой по&nbsp;обработке персональных данных</a></span>
 							</label>
 						</div>
-						<button class="informed-btn">Меняем мир вместе</button>
+						<button class="informed-btn show-popup-call">Меняем мир вместе</button>
 						<img class="image-01" src="./assets/img/informed/image-01.png" alt="alto" loading="lazy" decoding="async" />
 						<img class="image-02" src="./assets/img/informed/image-02.png" alt="alto" loading="lazy" decoding="async" />
 					</div>
 				</div>
 			</section>
 
-			<section class="faq">
+			<section class="faq" id="faq-scroll">
 				<div class="container">
 					<div class="faq-block">
 						<div class="faq-block__content">
@@ -372,43 +321,43 @@
 							<div class="panel">
 								<div class="panel-heading ">Как происходит подключение партнера?</div>
 								<div class="panel-collapse">
-									<div class="panel-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut&nbsp;labore et&nbsp;dolore magna aliquyam erat, sed diam voluptua. At&nbsp;vero eos et&nbsp;accusam et&nbsp;justo duo dolores et&nbsp;ea&nbsp;rebum. Stet clita kasd gubergren, no&nbsp;sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+									<div class="panel-body">Заполнив заявку на&nbsp;регистрацию, получите доступ к&nbsp;демо-кабинету рекламной сети, где ознакомитесь с&nbsp;возможностями платформы, загрузить необходимые документы и&nbsp;подписать соглашение о&nbsp;сотрудничестве. Далее Вам будут предоставлены доступы к&nbsp;полной версии платформы и&nbsp;возможность установить виджет Нафандрайзим на&nbsp;свой сайт.</div>
 								</div>
 							</div>
 							<div class="panel">
-								<div class="panel-heading ">Какие требования существуют?</div>
+								<div class="panel-heading ">Существуют&nbsp;ли требования к&nbsp;посещаемости сайта-партнера?</div>
 								<div class="panel-collapse">
-									<div class="panel-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut&nbsp;labore et&nbsp;dolore magna aliquyam erat, sed diam voluptua. At&nbsp;vero eos et&nbsp;accusam et&nbsp;justo duo dolores et&nbsp;ea&nbsp;rebum. Stet clita kasd gubergren, no&nbsp;sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+									<div class="panel-body">Посещаемость сайта должна составлять не&nbsp;менее 10&nbsp;тыс. уникальных пользователей в&nbsp;месяц.</div>
 								</div>
 							</div>
 							<div class="panel">
 								<div class="panel-heading ">Есть&nbsp;ли запрещенные тематики и&nbsp;ограничения на&nbsp;присоединение?</div>
 								<div class="panel-collapse">
-									<div class="panel-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut&nbsp;labore et&nbsp;dolore magna aliquyam erat, sed diam voluptua. At&nbsp;vero eos et&nbsp;accusam et&nbsp;justo duo dolores et&nbsp;ea&nbsp;rebum. Stet clita kasd gubergren, no&nbsp;sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+									<div class="panel-body">Мы&nbsp;не&nbsp;размещаем благотворительные виджеты на&nbsp;сайтах признанных экстремистскими и&nbsp;ресурсах иностранных агентов, сайтах с&nbsp;сомнительными тематиками, а&nbsp;так&nbsp;же сайтах с&nbsp;контентом&nbsp;18+</div>
 								</div>
 							</div>
 							<div class="panel">
 								<div class="panel-heading ">Могут&nbsp;ли физические лица присоединиться к&nbsp;партнерской сети?</div>
 								<div class="panel-collapse">
-									<div class="panel-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut&nbsp;labore et&nbsp;dolore magna aliquyam erat, sed diam voluptua. At&nbsp;vero eos et&nbsp;accusam et&nbsp;justo duo dolores et&nbsp;ea&nbsp;rebum. Stet clita kasd gubergren, no&nbsp;sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+									<div class="panel-body">Мы&nbsp;сотрудничаем с&nbsp;физическими лицами с&nbsp;оформленным статусом &laquo;Самозанятость&raquo; (НПД)</div>
 								</div>
 							</div>
 							<div class="panel">
-								<div class="panel-heading ">Как я&nbsp;могу убедиться в&nbsp;100% прозрачности работы партнерской программы?</div>
+								<div class="panel-heading ">Кто будет маркировать рекламу и&nbsp;направлять данные о&nbsp;рекламе в&nbsp;ЕРИР?</div>
 								<div class="panel-collapse">
-									<div class="panel-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut&nbsp;labore et&nbsp;dolore magna aliquyam erat, sed diam voluptua. At&nbsp;vero eos et&nbsp;accusam et&nbsp;justo duo dolores et&nbsp;ea&nbsp;rebum. Stet clita kasd gubergren, no&nbsp;sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
-								</div>
-							</div>
-							<div class="panel">
-								<div class="panel-heading ">Как часто происходят выплаты?</div>
-								<div class="panel-collapse">
-									<div class="panel-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut&nbsp;labore et&nbsp;dolore magna aliquyam erat, sed diam voluptua. At&nbsp;vero eos et&nbsp;accusam et&nbsp;justo duo dolores et&nbsp;ea&nbsp;rebum. Stet clita kasd gubergren, no&nbsp;sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+									<div class="panel-body">Специалисты нашей компании позаботятся и&nbsp;о&nbsp;маркировке и&nbsp;об&nbsp;отправке статистики о&nbsp;каждой рекламной активности в&nbsp;ЕРИР через ОРД. Так&nbsp;же мы&nbsp;взяли на&nbsp;себя обязательства платить ежеквартальный рекламный сбор в&nbsp;гос.бюджет в&nbsp;размере&nbsp;3%, чтобы это не&nbsp;пришлось делать вам.</div>
 								</div>
 							</div>
 							<div class="panel">
 								<div class="panel-heading ">Размер вознаграждения партнера?</div>
 								<div class="panel-collapse">
-									<div class="panel-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut&nbsp;labore et&nbsp;dolore magna aliquyam erat, sed diam voluptua. At&nbsp;vero eos et&nbsp;accusam et&nbsp;justo duo dolores et&nbsp;ea&nbsp;rebum. Stet clita kasd gubergren, no&nbsp;sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+									<div class="panel-body">Вознаграждение для партнера составляет до&nbsp;25% от&nbsp;итоговой суммы пожертвований доноров, пришедших с&nbsp;вашего сайта</div>
+								</div>
+							</div>
+							<div class="panel">
+								<div class="panel-heading ">Как часто происходят выплаты?</div>
+								<div class="panel-collapse">
+									<div class="panel-body">Раз в&nbsp;месяц по&nbsp;результатам отчетного месяца</div>
 								</div>
 							</div>
 						</div>
@@ -423,43 +372,43 @@
 							<div class="panel">
 								<div class="panel-heading ">Как подключить к&nbsp;платформе свою благотворительную организацию?</div>
 								<div class="panel-collapse">
-									<div class="panel-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut&nbsp;labore et&nbsp;dolore magna aliquyam erat, sed diam voluptua. At&nbsp;vero eos et&nbsp;accusam et&nbsp;justo duo dolores et&nbsp;ea&nbsp;rebum. Stet clita kasd gubergren, no&nbsp;sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+									<div class="panel-body">Заполните форму обратной связи и&nbsp;наши менеджеры свяжутся с&nbsp;Вами, подробно ответят на&nbsp;вопросы и&nbsp;направят список документов для подключения к&nbsp;рекламной сети</div>
 								</div>
 							</div>
 							<div class="panel">
-								<div class="panel-heading ">Что требуется от&nbsp;НКО?</div>
+								<div class="panel-heading ">Какие вложения на&nbsp;старте потребуются от&nbsp;благотворительной организации?</div>
 								<div class="panel-collapse">
-									<div class="panel-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut&nbsp;labore et&nbsp;dolore magna aliquyam erat, sed diam voluptua. At&nbsp;vero eos et&nbsp;accusam et&nbsp;justo duo dolores et&nbsp;ea&nbsp;rebum. Stet clita kasd gubergren, no&nbsp;sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+									<div class="panel-body">Не нужно ничего платить в начале сотрудничества. Команда Нафандрайзим создаст посадочную страницу для каждой цели благотворительного сбора, на которую будет вести виджет рекламной сети. Оплата комиссионного вознаграждения партнеру и платформе происходит постфактум.</div>
 								</div>
 							</div>
 							<div class="panel">
-								<div class="panel-heading ">Есть&nbsp;ли ограничения на&nbsp;направленность <br/>благотворительного проекта?</div>
+								<div class="panel-heading ">Каковы ограничения на&nbsp;направленность благотворительного проекта?</div>
 								<div class="panel-collapse">
-									<div class="panel-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut&nbsp;labore et&nbsp;dolore magna aliquyam erat, sed diam voluptua. At&nbsp;vero eos et&nbsp;accusam et&nbsp;justo duo dolores et&nbsp;ea&nbsp;rebum. Stet clita kasd gubergren, no&nbsp;sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+									<div class="panel-body">Ограничений по&nbsp;тематике нет, однако важно наличие подопечных для адресных сборов средств</div>
 								</div>
 							</div>
 							<div class="panel">
 								<div class="panel-heading ">Кто и&nbsp;как будет сопровождать наш благотворительный проект в&nbsp;платформе?</div>
 								<div class="panel-collapse">
-									<div class="panel-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut&nbsp;labore et&nbsp;dolore magna aliquyam erat, sed diam voluptua. At&nbsp;vero eos et&nbsp;accusam et&nbsp;justo duo dolores et&nbsp;ea&nbsp;rebum. Stet clita kasd gubergren, no&nbsp;sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+									<div class="panel-body">У&nbsp;каждого благотворительного фонда будет проектный менеджер для решения возникающих вопросов.</div>
 								</div>
 							</div>
 							<div class="panel">
 								<div class="panel-heading ">Размер комиссии сайта-партнера и&nbsp;платформы?</div>
 								<div class="panel-collapse">
-									<div class="panel-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut&nbsp;labore et&nbsp;dolore magna aliquyam erat, sed diam voluptua. At&nbsp;vero eos et&nbsp;accusam et&nbsp;justo duo dolores et&nbsp;ea&nbsp;rebum. Stet clita kasd gubergren, no&nbsp;sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+									<div class="panel-body">Общая сумма комиссии партнера и&nbsp;площадки составит&nbsp;35% от&nbsp;суммы поступивших на&nbsp;счет фонда пожертвований</div>
 								</div>
 							</div>
 							<div class="panel">
 								<div class="panel-heading ">Куда будут собираться средства?</div>
 								<div class="panel-collapse">
-									<div class="panel-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut&nbsp;labore et&nbsp;dolore magna aliquyam erat, sed diam voluptua. At&nbsp;vero eos et&nbsp;accusam et&nbsp;justo duo dolores et&nbsp;ea&nbsp;rebum. Stet clita kasd gubergren, no&nbsp;sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+									<div class="panel-body">Средства жертвователей поступают напрямую на&nbsp;расчетный счет благотворительного фонда</div>
 								</div>
 							</div>
 							<div class="panel">
-								<div class="panel-heading ">Как достоверно убедиться, что средства собраны именно благодаря участию партнера?</div>
+								<div class="panel-heading ">Как достоверно убедиться, что средства собраны благодаря участию партнера?</div>
 								<div class="panel-collapse">
-									<div class="panel-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut&nbsp;labore et&nbsp;dolore magna aliquyam erat, sed diam voluptua. At&nbsp;vero eos et&nbsp;accusam et&nbsp;justo duo dolores et&nbsp;ea&nbsp;rebum. Stet clita kasd gubergren, no&nbsp;sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+									<div class="panel-body">Для этого используются специальные метки &laquo;встроенные&raquo; в&nbsp;виджет, уникальные для каждого партнера.</div>
 								</div>
 							</div>
 						</div>
@@ -491,24 +440,24 @@
 					<div class="line-wrap">
 						<div class="footer-block-logotype">
 							<div class="logotype-content">
-								<a href="#" class="footer-logotype"><img src="./assets/img/header/logotype.svg" alt="alto" /></a>
+								<a href="/" class="footer-logotype"><img src="./assets/img/header/logotype.svg" alt="alto" /></a>
 								<span class="logotype-text">Платформа, где сайты помогают фондам получать стабильную поддержку</span>
 							</div>
 						</div>
 
 						<ul class="footer-menu">
-							<li class="menu-item"><a href="#">Как это работает</a></li>
-							<li class="menu-item"><a href="#">Наши фонды</a></li>
-							<li class="menu-item"><a href="#">Преимущества</a></li>
-							<li class="menu-item"><a href="#">О платформе</a></li>
-							<li class="menu-item"><a href="#">Как подключиться</a></li>
-							<li class="menu-item"><a href="#">Частые вопросы</a></li>
+							<li class="menu-item ancLinks"><a href="#turns-scroll">Как это работает</a></li>
+							<li class="menu-item ancLinks"><a href="#charitable-scroll">Наши фонды</a></li>
+							<li class="menu-item ancLinks"><a href="#significant-scroll">Преимущества</a></li>
+							<li class="menu-item ancLinks"><a href="#goodness-scroll">О платформе</a></li>
+							<li class="menu-item ancLinks"><a href="#quickstart-scroll">Как подключиться</a></li>
+							<li class="menu-item ancLinks"><a href="#faq-scroll">Частые вопросы</a></li>
 						</ul>
 
 						<div class="footer-block-subscribe">
 							<div class="subscribe-content">
 								<span class="subscribe-label">Вместе мы&nbsp;сможем больше&nbsp;&mdash; подключайтесь и&nbsp;помогайте с&nbsp;нами</span>
-								<button class="btn btn-blue">Присоединиться</button>
+								<button class="btn btn-blue show-popup-call">Присоединиться</button>
 							</div>
 						</div>
 					</div>
@@ -620,6 +569,52 @@
 					</div>
 				</div>
 			</div>
+
+			<div class="popup popup-call scroll-line-none" style="display: none;">
+				<div class="popup-content">
+					<div class="popup-content__top">
+						<h3 class="popup-title">Оставьте ваши контактные данные <br/>и&nbsp;мы&nbsp;с&nbsp;вами свяжемся</h3>
+						<button class="popup-close"></button>
+					</div>
+					<div class="form">
+						<div class="form-group form-full">
+							<span class="form-label">Наименование фонда</span>
+							<input name="fond" type="text" placeholder="Добрые дела имени доктора Павлова" class="form-input" />
+							<span class="form-error">Укажите фонд</span>
+						</div>
+						<div class="form-group form-half">
+							<span class="form-label">Телефон</span>
+							<input name="phone" type="text" placeholder="+79304520017" class="form-input" />
+							<span class="form-error">Укажите ваш телефон</span>
+						</div>
+						<div class="form-group form-half">
+							<span class="form-label">Как к вам обратиться</span>
+							<input name="name" type="text" placeholder="Мария Сергеевна" class="form-input" />
+							<span class="form-error">Укажите ваше имя</span>
+						</div>
+						<div class="form-group form-submit">
+							<button class="btn btn-blue">Отправить</button>
+						</div>
+						<div class="form-group form-group-access form-radio">
+							<div class="form-group__radio">
+								<label>
+									<input type="radio" class="form-radio form-radio-option" name="access-person" />
+									<span>Даю согласие на обработку персональных данных в соответствии с <a href="#" target="_blank" rel="noopener noreferrer">политикой по обработке персональных данных</a></span>
+								</label>
+								<label>
+									<input type="radio" class="form-radio form-radio-option" name="access-subscribe" />
+									<span>Даю согласие на получение рекламной рассылки</span>
+								</label>
+							</div>
+							<span class="form-error">Поставьте согласия, чтобы продолжить</span>
+						</div>
+						<div class="form-group form-full">
+							<a class="form-notice" href="#" target="_blank" rel="noopener noreferrer">Политика ПДН и конфиденциальность</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
 		</div>
 
 		<script src="./assets/js/jquery-3.6.1.min.js"></script>

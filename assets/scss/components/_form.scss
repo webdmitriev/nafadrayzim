@@ -149,6 +149,16 @@
         border-color: $red;
       }
     }
+    a.form-notice {
+      display: block;
+      width: 100%;
+      max-width: max-content;
+      font-family: $ff;
+      font-weight: 400;
+      font-size: 12px;
+      text-decoration: underline;
+      color: #ababab;
+    }
     &:last-child {
       margin-bottom: 0;
     }

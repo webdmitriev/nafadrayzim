@@ -1,5 +1,6 @@
 # Исключить конкретный файл mail.php
 mail.php
+recall.php
 
 # Исключить всю папку phpmailer
 phpmailer/
