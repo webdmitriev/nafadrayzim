@@ -3002,10 +3002,10 @@ section {
   z-index: 2;
 }
 .goodness .goodness-content .image-01-blue {
-  bottom: 0;
-  left: 360px;
-  width: 249px;
-  height: 219px;
+  bottom: -50px;
+  left: 260px;
+  width: 449px;
+  height: 380px;
   z-index: 3;
 }
 .goodness .goodness-content .image-02-blue {
@@ -3086,8 +3086,8 @@ section {
   }
   .goodness .goodness-content .image-01-blue {
     left: 40px;
-    width: 200px;
-    height: 180px;
+    width: 380px;
+    height: 340px;
     z-index: 8;
   }
   .goodness .goodness-content .image-01-white {
@@ -3152,8 +3152,8 @@ section {
     object-fit: contain;
   }
   .goodness .goodness-content .image-01-blue {
-    width: 180px;
-    height: 160px;
+    width: 280px;
+    height: 260px;
   }
   .goodness .goodness-content .image-02-white-mob {
     left: 10px;
@@ -3216,6 +3216,9 @@ section {
   }
   .goodness .goodness-content .goodness-content__title {
     font-size: 20px;
+  }
+  .goodness .goodness-content .image-01-blue {
+    left: 0;
   }
   .goodness .goodness-content .image-03-blue-mob {
     max-width: 92%;
