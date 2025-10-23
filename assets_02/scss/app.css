@@ -1187,15 +1187,6 @@ section {
   border-radius: 18px;
   z-index: 12;
 }
-.main .btn:after {
-  content: "";
-  position: absolute;
-  right: -114px;
-  bottom: -64px;
-  width: 161px;
-  height: 144px;
-  background: url("../img/main/arrow.png") center/contain no-repeat;
-}
 .main .main-image {
   position: relative;
   top: -82px;
@@ -1243,6 +1234,27 @@ section {
   width: 424px;
   height: 474px;
 }
+.main .heart-01 {
+  position: absolute;
+  bottom: 160px;
+  left: calc(50% - 158.5px);
+  display: block;
+  width: 317px;
+  height: 322px;
+  object-fit: contain;
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  z-index: 12;
+}
+.main .arrow {
+  position: absolute;
+  top: calc(100% - 50px);
+  right: -100px;
+  width: 161px;
+  height: 144px;
+  object-fit: contain;
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  z-index: 200;
+}
 
 @media (max-width: 1199px) {
   .main .main-image {
@@ -1267,6 +1279,9 @@ section {
     right: -70px;
     width: 354px;
     height: 404px;
+  }
+  .main .heart-01 {
+    bottom: 110px;
   }
 }
 @media (max-width: 991px) {
@@ -1298,6 +1313,18 @@ section {
     right: -50px;
     width: 254px;
     height: 304px;
+  }
+  .main .heart-01 {
+    bottom: 90px;
+    left: calc(50% - 110px);
+    width: 220px;
+    height: 234px;
+  }
+  .main .arrow {
+    top: 30px;
+    right: -80px;
+    width: 131px;
+    height: 114px;
   }
 }
 @media (max-width: 767px) {
@@ -1335,6 +1362,18 @@ section {
     right: -40px;
     width: 204px;
     height: 254px;
+  }
+  .main .heart-01 {
+    bottom: 20px;
+    left: calc(50% - 80px);
+    width: 160px;
+    height: 284px;
+  }
+  .main .arrow {
+    top: 30px;
+    right: -50px;
+    width: 111px;
+    height: 94px;
   }
 }
 @media (max-width: 576px) {
@@ -1386,6 +1425,9 @@ section {
     right: -20px;
     width: 164px;
     height: 214px;
+  }
+  .main .heart-01 {
+    display: none;
   }
 }
 @media (max-width: 460px) {

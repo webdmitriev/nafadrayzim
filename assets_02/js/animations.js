@@ -123,3 +123,40 @@ jQuery(document).ready(function ($) {
   window.changeColorAnimated = changeColorAnimated;
   window.escapeRegExp = escapeRegExp;
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const section = document.querySelector('.main');
+  const heart = document.querySelector('.heart-01');
+  const arrow = document.querySelector('.arrow');
+
+  let isInside = false;
+
+  section.addEventListener('mousemove', function (e) {
+    if (!isInside) return;
+
+    const rect = section.getBoundingClientRect();
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+
+    const mouseX = e.clientX - rect.left;
+    const mouseY = e.clientY - rect.top;
+
+    // Смещение относительно центра
+    const moveX = (mouseX - centerX) * 0.02;
+    const moveY = (mouseY - centerY) * 0.02;
+
+    heart.style.transform = `translate(${moveX}px, ${moveY}px)`;
+    arrow.style.transform = `translate(${-moveX * 0.8}px, ${-moveY * 0.8}px)`;
+  });
+
+  section.addEventListener('mouseenter', function () {
+    isInside = true;
+  });
+
+  section.addEventListener('mouseleave', function () {
+    isInside = false;
+    heart.style.transform = 'translate(0, 0)';
+    arrow.style.transform = 'translate(0, 0)';
+  });
+});
