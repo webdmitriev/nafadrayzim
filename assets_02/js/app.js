@@ -259,13 +259,6 @@ document.addEventListener('DOMContentLoaded', function () {
       accessPerson.parents(".form-group").removeClass("error");
     }
 
-    if (!accessSubscribe.is(":checked")) {
-      accessSubscribe.parents(".form-group").addClass("error");
-      isValid = false;
-    } else {
-      accessSubscribe.parents(".form-group").removeClass("error");
-    }
-
     if (!isValid) {
       return; // ❌ если форма невалидна — останавливаем
     }
